@@ -1,0 +1,4 @@
+<design:component>
+	<design:attribute name="height" label="Height in pixels" />
+    <design:attribute name="mmid" label="The MapAnything MiniMap Id" />
+</design:component>

@@ -1,0 +1,22 @@
+<aura:component controller="LiveChatMiniMapController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="liveChatRec" type="Object"/>
+    <aura:attribute name="errorMsg" type="String" />
+    <aura:attribute name="mmid" type="String" default="aAc3i0000004CtPCAU"/>
+    <aura:attribute name="height" type="Integer" default="500"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:if isTrue="{!or(and(v.liveChatRec != null, v.liveChatRec.CaseId != null), v.errorMsg != null)}">
+        <div id="wrapper1" class="slds-card" style="{!'height:' + v.height + 'px;width:100%;overflow:hidden'}">
+            <aura:if isTrue="{!v.errorMsg.length > 0}">
+                <ui:message title="Error" severity="error" closable="true" click="{!c.closeError}">
+                    {!v.errorMsg}
+                </ui:message>
+            </aura:if>
+            <aura:if isTrue="{!v.liveChatRec != null}">
+                <iframe aura:id="vfFrame" src="{!'/apex/maps__Nearby?rid=' + v.liveChatRec.CaseId + '&amp;mmid=' + v.mmid}"  width="100%" height="100%" frameborder="0"/>
+            </aura:if>        
+        </div>
+    </aura:if>
+    
+</aura:component>
