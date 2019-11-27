@@ -8,6 +8,15 @@ This is Aura Lightning Component that allows including a Salesforce Maps MiniMap
 
 ![alt text](https://github.com/thedges/LiveChatMiniMap/blob/master/LiveChatMiniMap.png "Sample Image")
 
+## Component Configuration
+
+The component has two configuration properties as defined below.
+
+| Parameter | Description |
+|-----------|-------------|
+| <b>Height</b> | The height of the iframe in pixels.|
+| <b>Mini Map ID</b> | The Salesforce record id of the Salesforce Maps mini map configuration. You need to get this from the MapAnything setup. |
+
 ## Component Install and Setup
 
 To use this component:
