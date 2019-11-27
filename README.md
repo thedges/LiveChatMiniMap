@@ -1,5 +1,5 @@
 # LiveChatMiniMap
-Simple component to show Salesforce Maps MiniMap (MapAnything) on a page that mini maps are not supported. This component is hardcoded for a specific demo example but I could create a generic version based on demand.
+Simple component to show Salesforce Maps MiniMap (MapAnything) on a page that mini maps are not supported. This component is hardcoded for a specific demo example but I could create a generic version based on demand so let me know.
 
 THIS SOFTWARE IS COVERED BY [THIS DISCLAIMER](https://raw.githubusercontent.com/thedges/Disclaimer/master/disclaimer.txt).
 
